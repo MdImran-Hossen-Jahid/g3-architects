@@ -58,9 +58,15 @@
   font-weight: 500;
 }
 
-.navbar, .banner{
+.navbar{
   max-width: 1440px;
   margin: 0 auto;
+  padding-top:50px;
+}
+.banner{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 90px;
 }
 
 /* banner related styles */
@@ -73,6 +79,11 @@ margin-bottom: 50px;
 .banner-title{
   font-weight: 700;
   font-size: 4rem;
+}
+.banner-description{
+  color: #727272;
+  margin-top: 35px;
+  margin-bottom: 25px;
 }
 .banner-image{
   width: 100%;
