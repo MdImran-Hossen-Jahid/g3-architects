@@ -38,10 +38,13 @@
   margin: 0;
   padding: 0;
 }
-/* navbar related styles */
+/* navbar related styles start*/
 .navbar{
   justify-content: space-around;
   align-items: center;
+   max-width: 1440px;
+  margin: 0 auto;
+  padding-top:50px;
 }
 
 .brand{
@@ -57,19 +60,14 @@
   font-size: 18px;
   font-weight: 500;
 }
+/* navbar related styles end */
 
-.navbar{
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top:50px;
-}
+/* banner related styles start */
 .banner{
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 90px;
 }
-
-/* banner related styles */
 .banner-content{
   max-width: 850px;
   margin: 0 auto;
@@ -89,8 +87,57 @@ margin-bottom: 50px;
   width: 100%;
   margin-bottom: 45px;
 }
+/* banner related styles end */
+
+/* our features section start */
+.our-features{
+  max-width: 80%;
+  display: flex;
+  gap: 50px;
+  margin: 85px auto 130px;
+
+}
+.team-images-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.team-image{
+  width: 242px;
+  height: 242px;
+}
+.our-features-description-item{
+  display: flex;
+  align-items: center;
+}
+.features-title{
+  font-size: 2.8rem;
+}
+.features-description{
+  margin-top: 24px;
+  margin-bottom: 32px;
+  color: #727272;
+}
+/* responsive design for mobile devices */
 @media screen and (max-width:576px) {
   .navbar, .nav-links{
     flex-direction: column;
+  }
+  .team-images-item{
+     grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features{
+    flex-direction: column;
+  }
+}
+
+/* responsive design for tablet */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .our-features{
+    flex-direction: column;
+  }
+  .team-image{
+    width: 100%;
+    height: auto;
   }
 }
