@@ -32,6 +32,23 @@
   border-radius: 8px;
   border: none;
 }
+.enjoyable-feature{
+  width: 450px;
+  border:none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.06);
+  margin-top: 19px;
+  padding: 20px 20px 20px 20px;
+  background-color: beige;
+}
+.enjoyable-feature-title{
+color: #131313;
+font-size: 1.25rem;
+}
+.enjoyable-feature-description{
+color: #727272;
+}
+
 /* shared style ends */
 
 *{
@@ -89,7 +106,7 @@ margin-bottom: 50px;
 }
 /* banner related styles end */
 
-/* our features section start */
+/* our features section related styles start */
 .our-features{
   max-width: 80%;
   display: flex;
@@ -118,6 +135,77 @@ margin-bottom: 50px;
   margin-bottom: 32px;
   color: #727272;
 }
+/* our features section related styles end */
+
+/* special feature section related style start */
+#special-features-item{
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.special-feature-title{
+font-size: 2.8rem;
+font-weight: Bold;
+color: #131313;
+margin-top: 35px;
+margin-bottom: 20px;
+width: 400px;
+}
+.special-feature-description{
+width: 500px;
+color: #727272;
+
+}
+.lady-architect{
+  height: auto;
+  width: 550px;
+}
+.experience-info{
+  font-size: 4.06rem;
+  font-weight: 700;
+  width: 258px;
+  background-color: color: rgb(255, 255, 255);
+}
+
+/* cart section relateed styles start */
+#area-facts{
+ max-width: 80%;
+ margin: 0 auto;
+}
+.fact-title{
+  font-size: 2.8rem;
+  color: rgb(19, 19, 19);
+  margin-top: 130px;
+  margin-bottom: 24px;
+}
+.fact-description{
+  width: 510px;
+  color: rgb(114, 114, 114);
+  margin-bottom: 80px;
+}
+.carts-item{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cart{
+  max-width: 170px;
+  max-height: 170px;
+  text-align: center;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  padding: 30px 25px 43px 20px;
+}
+.numbers{
+  font-size: 2.8rem;
+  color: #424242;
+}
+.completed-works{
+  font-size: 1.25rem;
+  color: #727272;
+}
+
+
 /* responsive design for mobile devices */
 @media screen and (max-width:576px) {
   .navbar, .nav-links{
@@ -127,17 +215,77 @@ margin-bottom: 50px;
      grid-template-columns: repeat(1, 1fr);
   }
   .our-features{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin: 60px auto 60px;
   }
+  .team-image{
+    width:100%;
+    height: auto;
+  }
+ #special-features-item{
+flex-direction: column;
+ }
+ .special-feature-title{
+  width: auto;
+ }
+ .special-feature-description{
+  width: auto;
+ }
+ .enjoyable-feature{
+  width: auto;
+  padding: 10px;
+ }
+ .lady-architect{
+  width: 100%;
+  margin-top: 20px
+ }
+ .fact-title{
+  margin-top: 90px;
+ }
+.fact-description{
+  width: auto;
+  margin-bottom: 45px;
+}
+.carts-item{
+grid-template-columns: repeat(1, 1fr);
+ }
+ .cart{
+  max-width: 85%;
+  margin-bottom: 20px;
+ }
 }
 
 /* responsive design for tablet */
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .our-features{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .team-image{
     width: 100%;
     height: auto;
   }
+  #special-features-item{
+flex-direction: column;
+ }
+ .special-feature-title{
+  width: auto;
+ }
+ .special-feature-description{
+  width: auto;
+ }
+ .enjoyable-feature{
+  width: auto;
+ }
+ .lady-architect{
+  width:100%;
+  margin-top: 20px;
+ }
+ .carts-item{
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .cart{
+  max-width: 80%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+ }
 }
