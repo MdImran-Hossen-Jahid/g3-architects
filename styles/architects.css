@@ -142,6 +142,7 @@ margin-bottom: 50px;
   max-width: 80%;
   margin: 0 auto;
   display: flex;
+  gap: 50px;
   justify-content: space-between;
 }
 .special-feature-title{
@@ -162,13 +163,22 @@ color: #727272;
   width: 550px;
 }
 .experience-info{
-  font-size: 4.06rem;
-  font-weight: 700;
-  width: 258px;
-  background-color: color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  margin-top: -90px;
+  margin-left: -30px;
+  padding: 20px;
+  color: white;
+  background: rgba(255, 144, 14, 1);
+}
+.year-of-experience{
+  font-size: 4rem;
+}
+.experience-text{
+  font-size: 1.56rem;
 }
 
-/* cart section relateed styles start */
+/* fact section relateed styles start */
 #area-facts{
  max-width: 80%;
  margin: 0 auto;
@@ -204,7 +214,49 @@ color: #727272;
   font-size: 1.25rem;
   color: #727272;
 }
+/* fact section related styles end */
 
+/*our-sponspors section related styles start  */
+#our-sponspors{
+  width: 80%;
+  margin: 0 auto;
+}
+.sponspors-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131313;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 24px;
+}
+.sponspors-description{
+  color: #727272;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.sponspors-item{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponspors-item img{
+  filter: grayscale(100%);
+}
+#footer-item{
+  max-width: 80%;
+  margin: 100px auto 200px;
+}
+.Policy-item{
+font-size: 1.25rem;
+padding-top: 38px;
+padding-bottom: 38px;
+color: #424242;
+background: rgba(255, 244, 231, 1);
+text-align: center;
+border-radius: 8px;
+
+}
 
 /* responsive design for mobile devices */
 @media screen and (max-width:576px) {
@@ -253,10 +305,43 @@ grid-template-columns: repeat(1, 1fr);
   max-width: 85%;
   margin-bottom: 20px;
  }
+ .sponspors-title{
+  margin-top: 115px;
+ }
+ .sponspors-description{
+  width: auto;
+ }
+ .sponspors-item{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+ }
+ .sponspors-item img{
+  margin: 0 auto;
+ }
+ .experience-info{
+  margin-top: -50px;
+  margin-left: -20px;
+  padding: 10px;
+ }
+ .year-of-experience{
+  font-size: 1.5rem;
+ }
+.experience-text{
+font-size: .9rem;
+}
+.Policy-item{
+  font-size: .9rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#footer-item{
+  margin: 70px auto 100px;
+}
+
 }
 
 /* responsive design for tablet */
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .our-features{
     flex-direction: column-reverse;
   }
@@ -288,4 +373,10 @@ flex-direction: column;
   margin-right: 20px;
   margin-bottom: 20px;
  }
+ .year-of-experience{
+  font-size: 2rem;
+ }
+ .experience-text{
+  font-size: 1rem;
+}
 }
